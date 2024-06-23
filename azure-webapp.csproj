@@ -5,6 +5,12 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>azure_webapp</RootNamespace>
+    <ApplicationInsightsResourceId>/subscriptions/021268fd-b903-4ad4-bfa1-ecdd79750662/resourceGroups/questHub-rg/providers/microsoft.insights/components/azure-webapp-sameera</ApplicationInsightsResourceId>
+    <UserSecretsId>e632811a-f941-44cb-8670-cfd00e8b88c8</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
+  </ItemGroup>
 
 </Project>
