@@ -1,0 +1,7 @@
+C:\MY PROJECTS\azure-webapp\publish\azure-webapp.exe
+C:\MY PROJECTS\azure-webapp\publish\appsettings.Development.json
+C:\MY PROJECTS\azure-webapp\publish\appsettings.json
+C:\MY PROJECTS\azure-webapp\publish\azure-webapp.dll
+C:\MY PROJECTS\azure-webapp\publish\azure-webapp.deps.json
+C:\MY PROJECTS\azure-webapp\publish\azure-webapp.runtimeconfig.json
+C:\MY PROJECTS\azure-webapp\publish\azure-webapp.pdb
