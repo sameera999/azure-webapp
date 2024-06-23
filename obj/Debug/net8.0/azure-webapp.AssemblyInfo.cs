@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("azure-webapp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f91d0e077638695880d02e11e9a7dec76484d428")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a5ece4e3ddf336266f1fa9b0a81d56e301341fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("azure-webapp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("azure-webapp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
