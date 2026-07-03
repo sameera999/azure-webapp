@@ -20,3 +20,24 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.hero {
+  background: linear-gradient(135deg, #258cfb 0%, #1b5fbf 100%);
+  color: #fff;
+}
+
+.hero .lead {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hero .btn-primary {
+  background-color: #fff;
+  border-color: #fff;
+  color: #1b5fbf;
+}
+
+.hero .btn-primary:hover {
+  background-color: #f0f4ff;
+  border-color: #f0f4ff;
+  color: #1b5fbf;
+}

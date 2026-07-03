@@ -1,12 +1,143 @@
-﻿@page
+@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
-    
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome to AZure with Github Actions</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <h5>@ViewData["Greetings"]</h5>
-</div>
+<section class="hero text-center rounded-3 mb-5 py-5">
+    <div class="py-5">
+        <h1 class="display-4 fw-bold">Brightpath Consulting</h1>
+        <p class="lead col-lg-8 mx-auto">
+            We help growing businesses modernize their technology, streamline operations,
+            and scale with confidence.
+        </p>
+        <a class="btn btn-primary btn-lg mt-3" href="#contact" role="button">Get in touch</a>
+    </div>
+</section>
+
+<section class="mb-5">
+    <h2 class="text-center mb-4">What We Do</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Cloud Migration</h5>
+                    <p class="card-text">
+                        Move your workloads to the cloud with a clear, low-risk plan
+                        tailored to your business.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Custom Software</h5>
+                    <p class="card-text">
+                        From internal tools to customer-facing apps, we design and build
+                        software that fits how you work.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Ongoing Support</h5>
+                    <p class="card-text">
+                        Reliable maintenance and monitoring so your systems stay fast,
+                        secure, and up to date.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mb-5 row align-items-center">
+    <div class="col-md-6">
+        <h2>About Us</h2>
+        <p>
+            Brightpath Consulting is a small team of engineers and strategists who've
+            spent the last decade helping companies of every size get more out of their
+            technology. We believe in practical advice, honest timelines, and software
+            that actually gets used.
+        </p>
+        <p class="fw-semibold">@ViewData["Greetings"]</p>
+    </div>
+    <div class="col-md-6">
+        <div class="row text-center g-3">
+            <div class="col-4">
+                <div class="display-6 fw-bold">120+</div>
+                <div class="text-muted">Projects delivered</div>
+            </div>
+            <div class="col-4">
+                <div class="display-6 fw-bold">98%</div>
+                <div class="text-muted">Client satisfaction</div>
+            </div>
+            <div class="col-4">
+                <div class="display-6 fw-bold">10</div>
+                <div class="text-muted">Years in business</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mb-5">
+    <h2 class="text-center mb-4">What Clients Say</h2>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <blockquote class="blockquote card p-4 h-100 shadow-sm">
+                <p class="mb-2">
+                    "Brightpath took our messy legacy system and turned it into
+                    something our whole team actually enjoys using."
+                </p>
+                <footer class="blockquote-footer">Maria Chen, Operations Director</footer>
+            </blockquote>
+        </div>
+        <div class="col-md-6">
+            <blockquote class="blockquote card p-4 h-100 shadow-sm">
+                <p class="mb-2">
+                    "Clear communication, fair pricing, and they delivered exactly what
+                    they promised, on time."
+                </p>
+                <footer class="blockquote-footer">James Okafor, Founder, Loop Retail</footer>
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="mb-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="col-md-6 mx-auto">
+        <form method="post">
+            <div class="mb-3">
+                <label asp-for="Contact.Name" class="form-label"></label>
+                <input asp-for="Contact.Name" class="form-control" />
+                <span asp-validation-for="Contact.Name" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Contact.Email" class="form-label"></label>
+                <input asp-for="Contact.Email" class="form-control" />
+                <span asp-validation-for="Contact.Email" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Contact.Message" class="form-label"></label>
+                <textarea asp-for="Contact.Message" class="form-control" rows="4"></textarea>
+                <span asp-validation-for="Contact.Message" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+        @if (Model.SubmittedSuccessfully)
+        {
+            <div class="alert alert-success mt-3" role="alert">
+                Thanks for reaching out! We'll get back to you soon.
+            </div>
+        }
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
